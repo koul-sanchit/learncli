@@ -1,0 +1,26 @@
+backend/
+├── app/
+│   ├── main.py                      # FastAPI entry point
+│   ├── routers/
+│   │   ├── __init__.py
+│   │   ├── chat.py                  # Chat endpoints
+│   │   └── terminal.py              # Terminal simulation endpoints
+│   ├── models/
+│   │   ├── __init__.py
+│   │   ├── chat.py                  # Chat data models
+│   │   └── terminal.py              # Terminal data models
+│   └── services/
+│       ├── __init__.py
+│       ├── chat_service.py          # Chat LLM interactions
+│       └── terminal_service.py      # CLI simulator
+├── llm/
+│   ├── __init__.py
+│   ├── prompts/
+│   │   ├── __init__.py
+│   │   ├── chat_prompts.py          # Teaching prompts
+│   │   └── terminal_prompts.py      # CLI simulation prompts
+│   └── chains/
+│       ├── __init__.py
+│       ├── chat_chains.py           # LangChain chains for chat
+│       └── terminal_chains.py       # LangChain chains for terminal
+└── requirements.txt                 # Project dependencies
